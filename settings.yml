@@ -1,0 +1,623 @@
+show_for_members:
+  type: bool
+  default: false
+show_for_anon:
+  type: bool
+  default: true
+display_on_mobile:
+  type: bool
+  default: true
+display_on_desktop:
+  type: bool
+  default: true
+display_on_homepage:
+  type: bool
+  default: true
+url_must_contain:
+  type: list
+  list_type: simple
+  default: ""
+dismissible:
+  type: bool
+  default: false
+collapsible:
+  type: bool
+  default: false
+default_collapsed_state:
+  type: enum
+  default: collapsed
+  choices:
+    - expanded
+cookie_lifespan:
+  type: enum
+  default: none
+  choices:
+    - minute
+    - day
+    - week
+    - month
+    - year
+cookie_name:
+  type: string
+  default: "v1"
+full_width_banner:
+  type: bool
+  default: true
+swap_default_positioning:
+  type: bool
+  default: false
+plugin_outlet:
+  type: enum
+  default: "below-site-header"
+  choices:
+    - "below-site-header"
+    - "above-main-container"
+    - "discovery-list-controls-above"
+    - "header-list-container-bottom"
+    - "before-topic-list"
+  refresh: true
+banner_background_upload:
+  type: upload
+  default: ""
+banner_background_upload_dark:
+  type: upload
+  default: ""
+banner_background_image:
+  type: string
+  default: ""
+banner_background_image_dark:
+  type: string
+  default: ""
+background_color:
+  type: string
+  default: "#FFFFFF"
+background_color_dark:
+  type: string
+  default: ""
+primary_text_color:
+  type: string
+  default: "#171114"
+primary_text_color_dark:
+  type: string
+  default: ""
+secondary_text_color:
+  type: string
+  default: "#C2540B"
+secondary_text_color_dark:
+  type: string
+  default: ""
+link_text_color:
+  type: string
+  default: "#C9184A"
+link_text_color_dark:
+  type: string
+  default: ""
+main_heading_content:
+  type: string
+  textarea: true
+  default: |
+    <!-- ==========================================================
+         VICTORIOUS CHRISTIANS — LANDING COPY  ·  V17 "NARROW ROAD IV" (the road gets its margin; the gate merges)
+         Paste as: "Versatile Banner-Light V17" → Settings → main_heading_content
+         Requires: "Versatile Banner Theme Component CSS-light V17"
+
+         V9 MARKUP CHANGES (copy and structure otherwise identical to V8)
+           · the four photographs carry role="img" + aria-label
+           · "Two-thirds" uses a non-breaking hyphen
+           · .vc-joinbar added before the closing </div> (phone-only CTA)
+
+         Rebuilt on the five-section production copy. Every block
+         now carries its own colour and value — no block is a plain
+         field of type. Sequence: stance → charge → evidence →
+         answer → community → singles → cost → invitation.
+
+         VALUE RHYTHM (adjacent blocks never share a value)
+           white bloom → warm peach gradient → DARK → white
+           → rose band → DEEP SUNSET → DARK → white bloom → dark foot
+
+         STRUCTURE
+           1  Hero ............. wordmark, narrow-road thesis, THE TWO ROADS
+           2a The charge ....... vagueness + the open-Bible plate
+           2b The evidence ..... dark band, 5 pairs, "Judge not" featured
+           2c The answer ....... exegesis engine + the canon ink card
+           3  The body ........ community + campaign / trivia modules
+           4  Christian singles  the pop moment, three beats
+           5a The cost ........ dark, quiet on purpose
+           5b Come and see .... founding members + the invitation
+         ========================================================== -->
+    <div class="vc-landing-wrapper">
+      <!-- THE WAY. One road, from the foot of the page to the gate.
+           The lit part is how far the reader has walked. -->
+      <span class="vc-way" aria-hidden="true"><i class="vc-way-lit"></i></span>
+
+
+      <!-- ========== 1 · HERO ========== -->
+      <section class="vc-hero">
+        <div class="vc-hero-copy" data-reveal>
+          <div class="vc-wordmark">
+            <span class="nm">Victorious Christians</span>
+          </div>
+          <h1 class="vc-h1">
+            Stand on the Word.<br />
+            <span class="hl">Build with believers.</span>
+          </h1>
+          <p class="vc-p">
+            Most &ldquo;Christian&rdquo; apps are the broad road with a cross on the sign. A sign
+            doesn&rsquo;t change where the road leads. We built ours to do one thing &mdash; point
+            to the narrow road. The Word of God is the only sign we carry.
+          </p>
+          <div class="vc-cta-group">
+            <a class="vc-btn vc-btn--grad" href="/signup">Join the community <span>&rarr;</span></a>
+            <a class="vc-btn vc-btn--line" href="#vc-why" data-vc-howitworks>See how it works</a>
+          </div>
+          <p class="vc-hero-note">
+            One body, one Book &mdash; with a home of their own for Christian singles.
+          </p>
+        </div>
+
+        <figure class="vc-road" data-reveal data-d="1">
+                        <div class="vc-road-img" role="img"
+                          aria-label="A narrow stone causeway, lit along every seam, running away across a vast dark chasm and climbing to an arched gate of light standing open on the ridge."></div>
+                        <figcaption class="vc-road-cap">
+                          <span class="vs">&ldquo;Thy word is a lamp unto my feet, and a light unto my path.&rdquo;</span>
+                          <span class="rf">Psalm 119:105</span>
+                        </figcaption>
+                      </figure>
+      </section>
+
+      <!-- ========== 2a · THE CHARGE ========== -->
+      <section class="vc-sec vc-sec--charge" id="vc-why">
+        <span class="vc-gatemark" data-mark="1" aria-hidden="true"><svg viewBox="0 0 24 30" focusable="false"><path d="M 4 30 L 4 12 A 8 8 0 0 1 20 12 L 20 30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+        <div class="vc-container vc-charge">
+          <div data-reveal>
+            <div class="vc-eyebrow"><span>Why we built this</span></div>
+            <h2 class="vc-h2 vc-h2--xl">
+              Modern Christianity is drowning in <span class="hl">vagueness</span>.
+            </h2>
+            <p class="vc-p vc-p--short">
+              Ask a hard question and the world hands you a shrug &mdash; every answer is valid, every
+              path is fine, no one is ever wrong.
+            </p>
+            <p class="vc-turn">
+              Truth does not shift with the culture. A community standing on the Word never has to
+              guess.
+            </p>
+            <span class="vc-bedrock"><i class="dot"></i>Scripture is our bedrock.</span>
+          </div>
+
+          <figure class="vc-fig vc-fig--charge" role="img" aria-label="An open Bible lit from one side, a ribbon marking the page" data-reveal data-d="1">
+            <figcaption>
+              <span class="kk">In the beginning was the Word</span>
+              <span class="ln">The text was never vague. The commentary was.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 2b · THE EVIDENCE (dark band) ========== -->
+      <section class="vc-sec vc-sec--dark">
+        <span class="vc-gatemark" data-mark="2" aria-hidden="true"><svg viewBox="0 0 24 30" focusable="false"><path d="M 4 30 L 4 12 A 8 8 0 0 1 20 12 L 20 30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+        <span class="vc-glow vc-glow--tr"></span>
+        <span class="vc-glow vc-glow--bl"></span>
+        <div class="vc-container">
+          <div class="vc-eyebrow vc-eyebrow--onband" data-reveal>
+            <span>The world talks &rarr; Scripture answers</span>
+          </div>
+          <h2 class="vc-h2 vc-h2--onband" data-reveal>Every shrug already has an answer.</h2>
+
+          <div class="vc-pairs">
+            <div class="vc-pair" data-reveal>
+              <div class="vc-pair-side vc-pair-world">
+                <span class="vc-pair-lbl">The world talks</span>
+                <span class="q">&ldquo;All paths lead to the same place.&rdquo;</span>
+              </div>
+              <div class="vc-pair-side vc-pair-word">
+                <span class="vc-pair-lbl">Scripture answers</span>
+                <span class="a">&ldquo;No one comes to the Father except through me.&rdquo;</span>
+                <span class="r">John 14:6</span>
+              </div>
+            </div>
+
+            <div class="vc-pair" data-reveal>
+              <div class="vc-pair-side vc-pair-world">
+                <span class="vc-pair-lbl">The world talks</span>
+                <span class="q">&ldquo;As long as you&rsquo;re a good person.&rdquo;</span>
+              </div>
+              <div class="vc-pair-side vc-pair-word">
+                <span class="vc-pair-lbl">Scripture answers</span>
+                <span class="a">&ldquo;No one does good, not even one.&rdquo;</span>
+                <span class="r">Romans 3:12</span>
+              </div>
+            </div>
+
+            <div class="vc-pair" data-reveal>
+              <div class="vc-pair-side vc-pair-world">
+                <span class="vc-pair-lbl">The world talks</span>
+                <span class="q">&ldquo;Follow your heart &mdash; it knows the way.&rdquo;</span>
+              </div>
+              <div class="vc-pair-side vc-pair-word">
+                <span class="vc-pair-lbl">Scripture answers</span>
+                <span class="a">
+                  &ldquo;The heart is deceitful above all things, and desperately sick.&rdquo;
+                </span>
+                <span class="r">Jeremiah 17:9</span>
+              </div>
+            </div>
+
+            <div class="vc-pair" data-reveal>
+              <div class="vc-pair-side vc-pair-world">
+                <span class="vc-pair-lbl">The world talks</span>
+                <span class="q">&ldquo;It&rsquo;s true if it&rsquo;s true for you.&rdquo;</span>
+              </div>
+              <div class="vc-pair-side vc-pair-word">
+                <span class="vc-pair-lbl">Scripture answers</span>
+                <span class="a">&ldquo;Sanctify them in the truth; your word is truth.&rdquo;</span>
+                <span class="r">John 17:17</span>
+              </div>
+            </div>
+
+            <!-- the strongest pair on the page: the half-quote, answered -->
+            <div class="vc-pair vc-pair--feature" data-reveal>
+              <div class="vc-pair-side vc-pair-world">
+                <span class="vc-pair-lbl">The most weaponized verse</span>
+                <span class="q">&ldquo;Judge not.&rdquo;</span>
+                <span class="nt">
+                  Answered three verses of context away. The shrug isn&rsquo;t in Scripture &mdash;
+                  it&rsquo;s in the half-quote.
+                </span>
+              </div>
+              <div class="vc-pair-side vc-pair-word">
+                <span class="vc-pair-lbl">Scripture answers</span>
+                <span class="a">&ldquo;Judge with right judgment.&rdquo;</span>
+                <span class="r">John 7:24</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 2c · THE ANSWER ========== -->
+      <section class="vc-sec vc-sec--dusk">
+        <span class="vc-gatemark" data-mark="3" aria-hidden="true"><svg viewBox="0 0 24 30" focusable="false"><path d="M 4 30 L 4 12 A 8 8 0 0 1 20 12 L 20 30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+        <div class="vc-container">
+          <div class="vc-answer-head">
+            <div class="vc-answer-title" data-reveal>
+              <div class="vc-eyebrow"><span>The exegesis engine</span></div>
+              <h2 class="vc-h2">Every answer, traced back to the text.</h2>
+            </div>
+            <div class="vc-answer-lede" data-reveal data-d="1">
+              <p class="vc-p">
+              Bring the question you&rsquo;ve been afraid to ask out loud. You won&rsquo;t get an
+              opinion with a verse stapled to it. You&rsquo;ll get the passage opened &mdash; context
+              honored, weighed against the whole canon, taught at the depth you asked for and no
+              further. No label decides the answer before the text is opened. And where Scripture
+              holds a genuine tension, you&rsquo;ll be told it holds a tension, not handed a system
+              that pretends otherwise.
+            </p>
+            <p class="vc-remember">
+              <b>It remembers, too.</b> Come back in six months and it still knows what you&rsquo;ve
+              worked through, where you left off, and how you learn.
+            </p>
+            </div>
+          </div>
+          <div class="vc-answer-cards">
+            <div class="vc-vig vc-vig--engine" data-reveal>
+              <div class="vc-vig-bar"><span class="sp"></span><span class="ttl">The exegesis engine</span></div>
+              <div class="vc-ask">
+                <span class="who">You ask</span>
+                <p>Does &ldquo;judge not&rdquo; mean I can never call anything wrong?</p>
+              </div>
+              <div class="vc-ans">
+                <span class="who">It opens the passage</span>
+                <p>Matthew 7:1&ndash;5 is one sentence about <em>how</em> you judge, not whether. The log comes out of your own eye first &mdash; and then you see clearly enough to help.</p>
+                <div class="vc-chips">
+                  <span class="vc-chip">Context honored</span>
+                  <span class="vc-chip">Weighed against 66 books</span>
+                  <span class="vc-chip vc-chip--ref">John 7:24</span>
+                </div>
+              </div>
+              <div class="vc-vig-foot"><span class="go">Taught at the depth you asked for &mdash; and no further.</span></div>
+            </div>
+            <div class="vc-inkcard" data-reveal data-d="1">
+                        <span class="lbl">The whole canon</span>
+                        <div class="ttl">66 books.<br />One measure.</div>
+
+                        <div class="vc-canon-bars">
+                          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                        </div>
+
+                        <div class="vc-canon-legend">
+                          <span class="ot"><i></i> Old Testament &middot; 39</span>
+                          <span class="nt"><i></i> New Testament &middot; 27</span>
+                        </div>
+
+                        <ul class="vc-checks vc-checks--onink">
+                          <li><span class="ck">&#10003;</span>Exposition produces theology &mdash; never the reverse</li>
+                          <li><span class="ck">&#10003;</span>Measured against the whole canon &mdash; 66 books, one measure</li>
+                          <li><span class="ck">&#10003;</span>Genuine tensions held honestly</li>
+                        </ul>
+                      </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 3 · THE BODY ========== -->
+      <section class="vc-sec vc-sec--rose">
+        <span class="vc-gatemark" data-mark="4" aria-hidden="true"><svg viewBox="0 0 24 30" focusable="false"><path d="M 4 30 L 4 12 A 8 8 0 0 1 20 12 L 20 30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+        <div class="vc-container">
+          <div class="vc-body-grid">
+            <div data-reveal>
+              <div class="vc-eyebrow vc-eyebrow--plumink"><span>The body</span></div>
+              <h2 class="vc-h2">Iron sharpens iron. Bring iron.</h2>
+              <p class="vc-p">
+                Post to the wall. Take a thread all the way to the bottom of the question instead of
+                watching it die at the third reply. Talk in chat, share video, disagree without anyone
+                pretending disagreement is violence. Everything a social network does &mdash; among
+                believers holding the same Book, with no algorithm deciding what your faith is worth
+                this week.
+              </p>
+            </div>
+              <div class="vc-vig vc-vig--wall" data-reveal data-d="1">
+                <div class="vc-vig-bar">
+                  <span class="lp"></span><span class="lp"></span><span class="lp"></span>
+                  <span class="ttl">The wall</span>
+                </div>
+                <div class="vc-post">
+                  <span class="av"></span>
+                  <div class="bd">
+                    <span class="who">A member</span>
+                    <p>Does &ldquo;judge not&rdquo; mean I can never call anything wrong?</p>
+                  </div>
+                </div>
+                <div class="vc-post vc-post--reply">
+                  <span class="av av--2"></span>
+                  <div class="bd">
+                    <span class="who">A member</span>
+                    <p>Read to verse 5. Take the log out first &mdash; <em>then</em> help your brother with the speck. That is a command to judge rightly, not a ban on judging.</p>
+                    <span class="rf">Matthew 7:1&ndash;5</span>
+                  </div>
+                </div>
+                <div class="vc-vig-foot"><span class="go">The thread keeps going.</span></div>
+              </div>
+          </div>
+
+          <div class="vc-modules">
+            <!-- Module A — Scripture Campaign -->
+            <div class="vc-mod vc-mod--campaign" data-reveal>
+              <span class="kk">Walk it together</span>
+              <h3 class="vc-h3">Answer wrong and the light dims.</h3>
+              <p>
+                A serialized campaign the whole body walks together, scene by scene, on a shared
+                clock. What happens next depends on how the body answers &mdash; and answers
+                aren&rsquo;t checked against a hidden key. They&rsquo;re weighed on whether
+                you&rsquo;re standing on the text.
+              </p>
+
+              <div class="vc-meter">
+                <div class="vc-meter-head">
+                  <span class="lbl">Shared light meter</span>
+                  <span class="now">The light holds.</span>
+                </div>
+                <div class="vc-meter-track"><i></i></div>
+                <div class="vc-meter-legend">
+                  <span>The light is guttering</span>
+                  <span class="on">The light holds</span>
+                  <span>The light burns strong</span>
+                </div>
+                <p class="vc-meter-note">
+                  You find out together. Or walk the seasons alone, at your own pace.
+                </p>
+              </div>
+            </div>
+
+            <!-- Module B — Bible Trivia -->
+            <div class="vc-mod vc-mod--trivia" data-reveal data-d="1">
+              <span class="kk">Know it cold</span>
+              <h3 class="vc-h3">Contests that reward the Word, not the reflex.</h3>
+              <p>
+                A daily ladder drawn from a bank authored and vetted long before it reaches you. Play
+                the community contest, or work the Practice Bench alone.
+              </p>
+              <div class="vc-quiz">
+                <span class="vc-quiz-lbl">Today &middot; rung 4 of 10</span>
+                <p class="vc-quiz-q">Paul says the law was our guardian until whom?</p>
+                <ul class="vc-quiz-a">
+                  <li>Moses</li>
+                  <li class="is-right">Christ <span class="tick">&#10003;</span></li>
+                  <li>John</li>
+                </ul>
+                <div class="vc-quiz-rung"><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="vc-tags">
+                <span class="vc-tag vc-tag--solid">Daily ladder</span>
+                <span class="vc-tag">Practice Bench</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4 · CHRISTIAN SINGLES ========== -->
+      <section class="vc-sec vc-sec--pop">
+        <span class="vc-gatemark" data-mark="5" aria-hidden="true"><svg viewBox="0 0 24 30" focusable="false"><path d="M 4 30 L 4 12 A 8 8 0 0 1 20 12 L 20 30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+        <span class="vc-glow vc-glow--band"></span>
+        <div class="vc-container">
+          <div class="vc-singles-grid">
+            <div data-reveal>
+              <div class="vc-eyebrow vc-eyebrow--plum"><span>Christian singles</span></div>
+              <h2 class="vc-h2 vc-h2--pop">Find the one who&rsquo;s already found Him.</h2>
+              <p class="vc-lede">
+                The community for believers who won&rsquo;t settle for the secular standard. Equally
+                yoked isn&rsquo;t a suggestion &mdash; it&rsquo;s the foundation.
+              </p>
+            </div>
+              <div class="vc-vig vc-vig--veritas" data-reveal data-d="1">
+                <div class="vc-vig-bar vc-vig-bar--v">
+                  <span class="sp"></span><span class="ttl">Veritas</span>
+                </div>
+                <div class="vc-turn-row vc-turn-row--ai">
+                  <p>Tell me where you are with God right now &mdash; not where you&rsquo;d like to sound like you are.</p>
+                </div>
+                <div class="vc-turn-row vc-turn-row--you">
+                  <p>Honestly? I haven&rsquo;t been to church in two years.</p>
+                  <span class="who">You</span>
+                </div>
+                <div class="vc-turn-row vc-turn-row--ai">
+                  <p>Then say it plainly. That is one of the ten things weighed &mdash; and it is not the one that counts against you.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="vc-beats">
+            <div class="vc-beat vc-beat--light" data-reveal>
+              <span class="kk">Meet Veritas</span>
+              <h3 class="vc-h3">Nobody here swipes.</h3>
+              <p>
+                You write a real profile. Then Veritas sits down with you &mdash; a companion that
+                reads what you wrote and asks about it. Your testimony. What you&rsquo;re actually
+                looking for. Where you are with God right now, not where you&rsquo;d like to sound
+                like you are.
+              </p>
+              <span class="vc-beat-kick">Not a form. A conversation.</span>
+            </div>
+
+            <div class="vc-beat vc-beat--ink" data-reveal data-d="1">
+              <span class="kk">The measure</span>
+              <h3 class="vc-h3">Ten dimensions. Two&#8209;thirds of the weight on faith.</h3>
+              <div class="vc-weight"><i class="faith"></i><i class="life"></i></div>
+              <div class="vc-weight-legend">
+                <span class="on">Faith &middot; 67%</span>
+                <span>Life &middot; 33%</span>
+              </div>
+              <p>
+                Denomination, spiritual gifts, creation, gender roles, end times, eternal security
+                &mdash; held as distance, never as right and wrong. New believer or thirty years in.
+                Serving, seeking, stepping back, or quietly hurt and withdrawn from church altogether.
+              </p>
+              <span class="vc-beat-kick">That last one matters. No dating app has ever asked.</span>
+            </div>
+
+            <div class="vc-beat vc-beat--glass" data-reveal data-d="2">
+              <span class="kk">The pace</span>
+              <h3 class="vc-h3">It moves at the pace a courtship should.</h3>
+              <ol class="vc-steps">
+                <li><span class="n">1</span>You notice someone.</li>
+                <li><span class="n">2</span>If they notice you back, you both find out.</li>
+                <li>
+                  <span class="n">3</span>Only then can either of you ask to be introduced &mdash; and
+                  the other has to say yes.
+                </li>
+              </ol>
+              <span class="vc-beat-kick">
+                Nobody gets messaged by a stranger. Everyone here has verified they&rsquo;re a real
+                person.
+              </span>
+            </div>
+          </div>
+
+          <div class="vc-cta-group vc-cta-group--singles">
+            <a class="vc-btn vc-btn--white" href="/signup">Explore alignment <span>&rarr;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 5a · THE COST ========== -->
+      <section class="vc-sec vc-sec--dark vc-cost">
+        <span class="vc-gatemark" data-mark="6" aria-hidden="true"><svg viewBox="0 0 24 30" focusable="false"><path d="M 4 30 L 4 12 A 8 8 0 0 1 20 12 L 20 30" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" /></svg></span>
+        <span class="vc-glow vc-glow--cost"></span>
+        <div class="vc-container" data-reveal>
+          <div class="vc-tick"></div>
+          <h2>Standing here will cost you the world&rsquo;s <span class="hl hl--onband">approval</span>.</h2>
+          <p>
+            That is the point. Victorious Christians does not seek alignment with the world. We seek
+            God &mdash; and the Book He gave us is the measure of everything else. If holding that
+            costs us the culture&rsquo;s applause, we consider the trade already settled.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== 5b · COME AND SEE ========== -->
+      <section class="vc-final">
+        <span class="vc-glow vc-glow--final"></span>
+        <div class="vc-container" data-reveal>
+          <figure class="vc-arrive" data-reveal>
+            <div class="vc-arrive-img" role="img"
+              aria-label="Standing at the gate. The arch fills the frame, open, with light pouring through it onto the last stones of the road."></div>
+          </figure>
+          <span class="vc-founding"><i class="dot"></i>Now gathering the founding members</span>
+          <h2>Come and <span class="hl">see.</span></h2>
+          <p>
+            One Book. One body. One standard that does not move. The best home for believers on the
+            internet is being built right now &mdash; come build it with us.
+          </p>
+          <div class="vc-cta-group">
+            <a class="vc-btn vc-btn--grad" href="/signup">Join Victorious Christians <span>&rarr;</span></a>
+            <a class="vc-btn vc-btn--line" href="/login">Sign in</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="vc-foot">Victorious Christians &middot; <b>The Word, first.</b></div>
+
+      <!-- V9 · phone-only sticky CTA. Invisible until the initializer adds .is-on -->
+      <div class="vc-joinbar">
+        <span class="t">One Book. One body.</span>
+        <a class="vc-btn vc-btn--grad" href="/signup">Join <span>&rarr;</span></a>
+      </div>
+
+    </div>
+first_column_content:
+  type: string
+  textarea: true
+  default: ""
+second_column_content:
+  type: string
+  textarea: true
+  default: ""
+third_column_content:
+  type: string
+  textarea: true
+  default: ""
+fourth_column_content:
+  type: string
+  textarea: true
+  default: ""
+fifth_column_content:
+  type: string
+  textarea: true
+  default: ""
+first_column_size:
+  type: string
+  default: "auto"
+second_column_size:
+  type: string
+  default: "auto"
+third_column_size:
+  type: string
+  default: "auto"
+fourth_column_size:
+  type: string
+  default: ""
+fifth_column_size:
+  type: string
+  default: ""
+first_column_icon:
+  type: string
+  default: ""
+second_column_icon:
+  type: string
+  default: ""
+third_column_icon:
+  type: string
+  default: ""
+fourth_column_icon:
+  type: string
+  default: ""
+fifth_column_icon:
+  type: string
+  default: ""
